@@ -1,0 +1,243 @@
+<title>AI Assistants — Brand Style Demo</title>
+<style>
+  :root {
+    --brand-navy: #0f172a;
+    --brand-blue: #2563eb;
+    --brand-teal: #14b8a6;
+    --brand-purple: #7c3aed;
+    --brand-orange: #f97316;
+    --gray-text: #4b5563;
+    --gray-border: #e5e7eb;
+    --card-bg: #ffffff;
+    --page-bg: #f8fafc;
+    --gradient-heading: linear-gradient(90deg, var(--brand-blue), var(--brand-teal));
+    --gradient-cta: linear-gradient(90deg, var(--brand-blue), var(--brand-purple));
+    --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.08);
+    --shadow-card-hover: 0 10px 28px rgba(15, 23, 42, 0.13);
+    --radius-card: 20px;
+    --radius-pill: 999px;
+    --space-1: 8px; --space-2: 16px; --space-3: 24px;
+    --space-4: 32px; --space-5: 40px; --space-6: 48px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand-navy: #f1f5f9;
+      --gray-text: #94a3b8;
+      --gray-border: #293548;
+      --card-bg: #17212f;
+      --page-bg: #0b1220;
+      --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.45);
+      --shadow-card-hover: 0 10px 32px rgba(0, 0, 0, 0.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --brand-navy: #f1f5f9;
+    --gray-text: #94a3b8;
+    --gray-border: #293548;
+    --card-bg: #17212f;
+    --page-bg: #0b1220;
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.45);
+    --shadow-card-hover: 0 10px 32px rgba(0, 0, 0, 0.55);
+  }
+  :root[data-theme="light"] {
+    --brand-navy: #0f172a;
+    --gray-text: #4b5563;
+    --gray-border: #e5e7eb;
+    --card-bg: #ffffff;
+    --page-bg: #f8fafc;
+    --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.08);
+    --shadow-card-hover: 0 10px 28px rgba(15, 23, 42, 0.13);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, 'Segoe UI', 'Noto Sans TC', sans-serif;
+    background: var(--page-bg);
+    color: var(--brand-navy);
+    transition: background .2s, color .2s;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-3) var(--space-6);
+  }
+
+  .eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .page-tag {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--gray-border);
+    color: var(--brand-navy);
+  }
+  .eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--brand-teal);
+    background: linear-gradient(90deg, rgba(37,99,235,.08), rgba(20,184,166,.08));
+    background-clip: padding-box;
+    color: var(--brand-teal);
+    letter-spacing: .03em;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0 0 var(--space-2);
+    text-wrap: balance;
+  }
+  h1 .grad {
+    background: var(--gradient-heading);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+    color: var(--gray-text);
+    margin: 0 0 var(--space-3);
+    max-width: 60ch;
+    font-weight: 500;
+  }
+  .divider {
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-blue), var(--brand-teal), var(--brand-orange));
+    margin-bottom: var(--space-5);
+    opacity: .85;
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+  }
+  .tool-card {
+    background: var(--card-bg);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    transition: box-shadow .2s, transform .2s;
+  }
+  .tool-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-2px); }
+  .tool-icon {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    flex-shrink: 0;
+  }
+  .tool-name { font-weight: 700; font-size: 1.05rem; }
+  .tool-use { font-size: .85rem; color: var(--gray-text); margin-top: 2px; }
+
+  .callout {
+    background: linear-gradient(135deg, rgba(37,99,235,.08), rgba(20,184,166,.06));
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius-card);
+    padding: var(--space-4);
+    margin-bottom: var(--space-5);
+  }
+  .callout h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--brand-blue);
+    margin: 0 0 var(--space-2);
+  }
+  .callout ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex; flex-direction: column;
+    gap: 10px;
+  }
+  .callout li {
+    display: flex; align-items: center; gap: 10px;
+    font-size: .98rem;
+    font-weight: 600;
+  }
+  .check {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--brand-blue);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gradient-cta);
+    color: white;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 16px 30px;
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+  }
+  .cta:hover { box-shadow: var(--shadow-card-hover); }
+</style>
+
+<main>
+  <div class="eyebrow-row">
+    <span class="page-tag">1 / 8</span>
+    <span class="eyebrow">YOUR COMPLETE GUIDE</span>
+  </div>
+
+  <h1>AI <span class="grad">Assistants</span></h1>
+  <p class="subtitle">Use AI to think faster — chat, brainstorm, and get answers in seconds.</p>
+  <div class="divider"></div>
+
+  <div class="tool-grid">
+    <div class="tool-card">
+      <div class="tool-icon" style="background:#10a37f;">C</div>
+      <div><div class="tool-name">ChatGPT</div><div class="tool-use">General-purpose chat</div></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:#d97757;">A</div>
+      <div><div class="tool-name">Claude</div><div class="tool-use">Deep reasoning & writing</div></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:linear-gradient(135deg,#4285f4,#9b72cb);">G</div>
+      <div><div class="tool-name">Gemini</div><div class="tool-use">Multimodal, Google ecosystem</div></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:#1a1a2e;">P</div>
+      <div><div class="tool-name">Perplexity</div><div class="tool-use">Research with citations</div></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <h2>Best uses</h2>
+    <ul>
+      <li><span class="check">✓</span>Ask questions</li>
+      <li><span class="check">✓</span>Draft faster</li>
+      <li><span class="check">✓</span>Compare ideas</li>
+    </ul>
+  </div>
+
+  <button class="cta">Swipe for Knowledge Hub →</button>
+</main>

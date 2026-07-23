@@ -1,0 +1,55 @@
+Design a premium international-grade SaaS technology infographic card.
+
+CONTENT FOR THIS SLIDE:
+Page indicator: "1 / 8" and a small pill badge label "YOUR COMPLETE GUIDE"
+Main title (large, bold, blue-to-teal gradient): "AI Assistants"
+Subtitle (one line, gray): "Use AI to think faster, chat, brainstorm, and get answers in seconds."
+A rounded card section listing 5 rows, each with a small logo/icon on the left and a tool name in bold on the right:
+1. ChatGPT
+2. Claude
+3. Gemini
+4. Microsoft Copilot
+5. Perplexity
+Below the list, inside a light blue rounded callout box with a target icon, a "Best uses" section with three bullet points: "Ask questions", "Draft faster", "Compare ideas"
+Bottom: a large rounded pill call-to-action button with blue-to-purple gradient background, white bold text, and a right-arrow icon: "Swipe for Knowledge Hub →"
+
+FIXED BRAND VISUAL STYLE (apply exactly, do not change):
+
+Overall style:
+Design an international-grade SaaS technology infographic, Modern UI, in the style of Apple + OpenAI + Notion + Canva.
+White background with generous white space, using blue, teal/cyan, purple, and orange gradients as the primary brand colors.
+Card-based (Card UI) layout, every section uses rounded rectangles, soft drop shadows, soft neumorphism.
+Extra-large bold sans-serif heading with a blue-to-teal gradient.
+Information paired with icons and short text, consistent icon style, 3D flat illustration.
+Tech decorative elements: geometric dot grid, gradient glow blobs, sparkles, line accents, colorful gradient divider.
+Overall clean, premium, international feel.
+Layout suited for Instagram Carousel, LinkedIn Carousel, Facebook card post.
+Consistent grid spacing system, 8pt spacing system.
+Aspect ratio 4:5. Ultra high resolution.
+Professional infographic. Premium SaaS design. Minimal. Clean. Modern. Technology. Future UI.
+
+Color palette:
+Primary Blue, Royal Blue, Gradient Cyan, Turquoise, Purple Accent, Orange Accent, White Background, Light Gray Card, Soft Shadow, Glass Effect, Colorful Gradient Divider.
+(Blue = main title, Teal = emphasis/accent, Purple = automation-related content, Orange = create-related content, Off-white/gray = card background)
+
+Icon style:
+3D Flat Icon, Modern Illustration, Cute Robot mascot motif, Minimal UI Icons, Outline Icons, Gradient Icons, Soft Lighting, Rounded Corners, Professional SaaS Illustration, Consistency Design. All icons share the same series, same perspective angle, same light source, same shadow style.
+
+Layout:
+Grid Layout, Card Layout, Dashboard Style, Equal Margin, Equal Padding, Rounded Cards, Soft Shadow, Consistent Typography, Visual Hierarchy, Modern Presentation.
+Fixed structure: Title -> Subtitle -> row of Cards -> Bottom CTA.
+
+Typography:
+Large Bold Heading, Sans Serif, Minimal Typography, Professional, Clear hierarchy, High readability, Google Material Style, Apple Human Interface Style. Heading extra bold, subtitle medium bold, body text regular.
+
+Background:
+White background, gradient corner shape, tiny dot pattern, sparkles, rounded decorations, minimal abstract shapes. Keep it clean with almost no extra clutter.
+
+Card style:
+Rounded rectangle, soft shadow, floating card, light border, minimal, glassmorphism, neumorphism, clean UI, premium dashboard feel.
+
+CTA button:
+Large rounded button, blue-purple gradient, white text, arrow icon, soft shadow, call to action, premium SaaS.
+
+Overall composition keywords:
+Premium AI Infographic, Modern SaaS, Minimal Dashboard, Apple Style, OpenAI Style, Notion Style, Canva Style, Professional Tech Poster, Visual Hierarchy, Gradient Accent, Flat 3D Icons, White Space, Rounded UI, Corporate Presentation, Information Graphic, Easy to Read, International Design Award Style.
