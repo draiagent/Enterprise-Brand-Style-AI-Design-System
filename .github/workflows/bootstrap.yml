@@ -1,0 +1,27 @@
+name: Bootstrap Design System
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.bootstrap/part-008.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand project package
+        shell: bash
+        run: |
+          cat .bootstrap/part-*.txt | base64 --decode > package.zip
+          unzip -o package.zip
+          rm -rf .bootstrap package.zip .github/workflows/bootstrap.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: upload core design system architecture"
+          git push
